@@ -1,134 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
-:root{
-    --color-red: rgb(219, 27, 27);
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap");
+:root {
+  --color-red: rgb(219, 27, 27);
 }
-body{
-    background-color: rgb(24, 23, 23);
+body {
+  background-color: rgb(24, 23, 23);
 }
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-.header, .texthead{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.header,
+.texthead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.imgcima img{
-    width: 100px;
+.imgcima img {
+  width: 100px;
 }
-.texthead{
-    display: flex;
-    gap: 10em;
+.texthead {
+  display: flex;
+  gap: 10em;
 }
-.texthead a{
-    color: white;
-    transition: 0.8s;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Oswald", sans-serif;
+.texthead a {
+  color: white;
+  transition: 0.8s;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
 }
-.texthead a:hover{
-    transform: scale(1.2);
-    color: var(--color-red);
+.texthead a:hover {
+  transform: scale(1.2);
+  color: var(--color-red);
 }
-.header{
-    position: sticky;
-    background-color: rgb(15, 15, 15);
-    box-shadow: 1px 1px 4px;
-    justify-content: space-between;
-    padding: 0 5%;
-    top: 0;
-    opacity: 80%;
+.header {
+  position: sticky;
+  background-color: rgb(15, 15, 15);
+  box-shadow: 1px 1px 4px;
+  justify-content: space-between;
+  padding: 0 5%;
+  top: 0;
+  opacity: 80%;
 }
-h1{
-    font-size: 45px;
-    color: white;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
+h1 {
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
 }
-label{
-    font-size: 20px;
-    color: var(--color-red);
-    font-family: "Outfit", sans-serif;
+label {
+  font-size: 20px;
+  color: var(--color-red);
+  font-family: "Outfit", sans-serif;
 }
-legend{
-    font-size: 30px;
-    color: var(--color-red);
-    font-family: "Outfit", sans-serif;
+legend {
+  font-size: 30px;
+  color: var(--color-red);
+  font-family: "Outfit", sans-serif;
 }
-#ssd{
-width: 750px;
+#ssd {
+  width: 500px;
 }
-#bagui{
-    font-size: 50px;
-    text-align: center;
-
+#bagui {
+  font-size: 50px;
+  text-align: center;
 }
-.baguidoid{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
+.baguidoid {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
 }
-#ssa{
-    width: 400px;
+#ssa {
+  width: 400px;
 }
-input{
-    height: 40px;
+input {
+  font-size: 20px;
+  height: 40px;
+  margin-right: 40px;
 }
-#ssk{
-    margin-left: 20px;
+#ssk {
+  margin-left: 20px;
 }
-#ssm{
-    width: 450px;
+#ssm {
+  width: 450px;
 }
-#ssv{
-    width: 450px;
+#ssv {
+  width: 450px;
 }
-.bsf{
-    margin-bottom: 30px;
+.bsf {
+  margin-bottom: 30px;
 }
-#tksx{
-    width: 850px;
+#tksx {
+  width: 700px;
 }
-#pkm{
-    width: 400px;
+#pkm {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  width: 200px;
 }
-.bsk{
-    margin-bottom: 30px;
-    display: flex;
-    gap: 3em;
+.bsk {
+  margin: 0;
+  justify-content: center;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 3em;
 }
-#otk{
-    width: 100%;
-    height: 200px;
+#otk {
+  width: 100%;
+  height: 200px;
 }
-#pmbs{
-    width: 100px;
-    cursor: pointer;
-    height: 100px;
-    border: 5px;
-    border-color: black;
-    margin-top: 20px;
-    ridu
+#pmbs {
+  width: 100px;
+  cursor: pointer;
+  height: 100px;
+  margin-top: 20px;
 }
-.butoes{
-    display: flex;
-    flex-direction: row;
-    gap: 16em;
-    align-items: center;
-    text-align: center;
-    margin-left: 125px;
+.butoes button {
+  border-bottom-width: 3px;
+  border-color: var(--color-red);
+  background-color: transparent;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.8s;
 }
-.mmn{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+.butoes button:hover {
+  transform: scale(1.2);
+  color: var(--color-red);
+  background-color: rgb(15, 15, 15);
 }
-.estadociv{
-    display: flex;
-    flex-direction: row;
-    gap: 8em;
+.butoes {
+  display: flex;
+  flex-direction: row;
+  gap: 16em;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.mmn {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.estadociv {
+  display: flex;
+  flex-direction: row;
+  gap: 8em;
+}
+.especifico {
+  margin-right: 0px;
+  margin-left: 30px;
+}
+.pkx {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.bad {
+  margin: 5px;
+}
+select {
+  direction: ltr;
+}
+select:focus {
+  transform: translateY(0);
+}
+form {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#KJK {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+#sexi {
+  margin-right: 0;
+}
+#Masculin {
+  margin-right: 25px;
+}
+.contatos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
+}
+h2 {
+  color: white;
+}
+.contaticon {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+.contaticon i {
+  color: var(--color-red);
+  display: inline-flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border: 3px;
+  border-style: solid;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.8s;
+  margin-bottom: 5px;
+}
+.contaticon i:hover {
+  transform: scale(1.2);
+  background-color: var(--color-red);
+  color: rgb(15, 15, 15);
+}
+#centro {
+  position: relative;
+}
+.hiphop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
 }
