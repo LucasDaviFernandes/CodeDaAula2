@@ -1,144 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitezin de cria</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital X - Formulário Médico</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="p/png" href="hospital.png">
+  </head>
+  <body>
     <div class="header">
-        <div class="imgcima"><img src="hospital.png" alt=""></div>
-        <div class="texthead">
-            <a href="#">Home</a>
-            <a href="#">Perguntas</a>
-            <a href="#">Contato</a>
-        </div>
+      <div class="imgcima"><img src="hospital.png" alt="" /></div>
+      <div class="texthead">
+        <a href="#">Home</a>
+        <a href="#">Perguntas</a>
+        <a href="#">Contato</a>
+      </div>
     </div>
     <h1>Formulário</h1>
-    <fieldset>
-        <legend>Dados Pessoais</legend>
-        <form action="">
-            <div class="baguidoid">
-                <label for="Prontuario"><span id="bagui">Prontuario</span></label>
-                <input id="ssa" type="text">
+    <fieldset id="Mn">
+      <legend>Dados Pessoais</legend>
+      <form id="meuFormulario" action="">
+        <div class="baguidoid">
+          <label for="Prontuario"><span id="bagui">Prontuario</span></label>
+          <input id="ssa" type="text" />
+          <label for="">Estado onde ocorreu o atendimento</label>
+          <select name="" id="tmjbb">
+            <option value="opcao1">AC</option>
+            <option value="opcao2">AL</option>
+            <option value="opcao3">AP</option>
+            <option value="opcao4">AM</option>
+            <option value="opcao5">BA</option>
+            <option value="opcao6">CE</option>
+            <option value="opcao7">DF</option>
+            <option value="opcao8">ES</option>
+            <option value="opcao9">GO</option>
+            <option value="opcao10">MA</option>
+            <option value="opcao11">MT</option>
+            <option value="opcao12">MS</option>
+            <option value="opcao13">MG</option>
+            <option value="opcao14">PA</option>
+            <option value="opcao15">PB</option>
+            <option value="opcao16">PR</option>
+            <option value="opcao17">PE</option>
+            <option value="opcao18">PI</option>
+            <option value="opcao19">RJ</option>
+            <option value="opcao20">RN</option>
+            <option value="opcao21">RS</option>
+            <option value="opcao22">RO</option>
+            <option value="opcao23">SC</option>
+            <option value="opcao24">SP</option>
+            <option value="opcao25">SE</option>
+            <option value="opcao26">TO</option>
+          </select>
+        </div>
+        <br />
+        <div class="bsf">
+          <label for="name">Nome</label>
+          <input id="ssd" type="text" required />
+          <label id="ssk" for="Apelido">Apelido</label>
+          <input id="ssm" type="text" />
+        </div>
+        <br />
+        <div class="bsf">
+          <label for="">Data de nascimento</label>
+          <input type="date" required />
+        </div>
+        <br />
+        <div class="bsf">
+          <label for="">Telefone</label>
+          <input class="phone_with_ddd" type="text" required  placeholder="(xx) xxxxx-xxxx"/>
+        </div>
+        <br />
+        <div class="bsf" id="KJK">
+          <label for="Rua">Rua/Sitio</label>
+          <input id="ssv" type="text" />
+          <label for="">Nº</label>
+          <input type="text" />
+          <label for="">Comp.</label>
+          <input type="text" />
+        </div>
+        <br />
+        <div class="bsf">
+          <label for="Bairro">Bairro/Dist.</label>
+          <input type="text" />
+          <label for="">Munic.</label>
+          <input type="text" />
+        </div>
+        <br />
+        <div class="bsf">
+          <label for="">Ponto de Ref</label>
+          <input type="text" />
+          <label for="">CEP</label>
+          <input id="cep" type="text" placeholder="xxxxx-xxx" />
+        </div>
+        <div class="bsf">
+          <label for="">Local onde nasceu</label>
+          <input type="text" />
+          <label for="estado">Estado Natal</label>
+          <select name="opcoes" id="opcoes">
+            <option value="opcao1">AC</option>
+            <option value="opcao2">AL</option>
+            <option value="opcao3">AP</option>
+            <option value="opcao4">AM</option>
+            <option value="opcao5">BA</option>
+            <option value="opcao6">CE</option>
+            <option value="opcao7">DF</option>
+            <option value="opcao8">ES</option>
+            <option value="opcao9">GO</option>
+            <option value="opcao10">MA</option>
+            <option value="opcao11">MT</option>
+            <option value="opcao12">MS</option>
+            <option value="opcao13">MG</option>
+            <option value="opcao14">PA</option>
+            <option value="opcao15">PB</option>
+            <option value="opcao16">PR</option>
+            <option value="opcao17">PE</option>
+            <option value="opcao18">PI</option>
+            <option value="opcao19">RJ</option>
+            <option value="opcao20">RN</option>
+            <option value="opcao21">RS</option>
+            <option value="opcao22">RO</option>
+            <option value="opcao23">SC</option>
+            <option value="opcao24">SP</option>
+            <option value="opcao25">SE</option>
+            <option value="opcao26">TO</option>
+          </select>
+        </div>
+        <br />
+        <div class="bsk">
+          <fieldset id="tksx">
+            <legend>Estado Civil</legend>
+            <div class="estadociv">
+              <div class="pkx">
+                <input class="bad" name="opcao" type="radio" />
+                <label for="Casado">Casado</label>
+              </div>
+              <div class="pkx">
+                <input class="bad" name="opcao" type="radio" />
+                <label for="">Solteiro</label>
+              </div>
+              <div class="pkx">
+                <input class="bad" name="opcao" type="radio" />
+                <label for="">Viúvo</label>
+              </div>
+              <div class="pkx">
+                <input class="bad" name="opcao" type="radio" />
+                <label for="">Outro</label>
+              </div>
             </div>
-            <br>
-            <div class="bsf">
-                <label for="name">Nome</label>
-                <input id="ssd" type="text">
-                <label id="ssk" for="Apelido">Apelido</label>
-                <input id="ssm" type="text">
-            </div><br>
-            <label for="">Telefonte</label>
-            <input type="tel" placeholder="(XX) XXXXX-XXXX" required>
-            <br>
-            <div class="bsf">
-                <label for="Rua">Rua/Sitio</label>
-                <input id="ssv" type="text">
-                <label for="">Nº</label>
-                <input type="text">
-                <label for="">Comp.</label>
-                <input type="text">
+          </fieldset>
+          <fieldset id="pkm">
+            <legend>Sexo</legend>
+            <div class="mmn">
+              <input class="bad" id="sexi" name="sex" type="radio" />
+              <label id="Masculin" for="">Masculino</label>
             </div>
-            <br>
-            <div class="bsf">
-                <label for="Bairro">Bairro/Dist.</label>
-                <input type="text">
-                <label for="">Munic.</label>
-                <input type="text">
-                <label for="">U.F</label>
-                <select name="" id=""></select>
+            <div class="mmn">
+              <input class="bad" id="sexi" name="sex" type="radio" />
+              <label for="Feminino">Feminino</label>
             </div>
-            <br>
-            <div class="bsf">
-                <label for="">Ponto de Ref</label>
-                <input type="text">
-                <label for="">Tel.</label>
-                <input type="text">
-                <label for="">CEP</label>
-                <input type="text">
-            </div>
-            <br>
-            <div class="bsf">
-                <label for="">Local Nasc.</label>
-                <input type="text">
-                <label for="">Data</label>
-                <input type="text">
-                <label for="">Idade</label>
-                <input type="text">
-                <label for="">anos</label>
-                <input type="text">
-                <label for="">meses</label>
-            </div>
-            <br>
-            <div class="bsf">
-                <label for="">Municipio onde nasceu</label>
-                <input type="text">
-                <label for="estado">Estado</label>
-                <select name="opcoes" id="opcoes">
-                <option value="opcao1">BA</option>
-                <option value="">PB</option>
-                <option value="">MG</option>
-                <option value="">CE</option>
-                <option value="">GO</option>
-                <option value="">RO</option>
-                <option value="">PE</option>
-            
-            </select>
-            </div>
-            <br>
-            <div class="bsk">
-                <fieldset id="tksx">
-                    <legend>Estado Civil</legend>
-                    <div class="estadociv">
-                        <div class="mmn">
-                            <input type="checkbox">
-                            <label for="Casado">Casado</label>
-                        </div>
-                        <div class="mmn">
-                            <input type="checkbox">
-                            <label for="">Solteiro</label>
-                        </div>
-                        <div class="mmn">
-                            <input type="checkbox">
-                            <label for="">Viúvo</label>
-                        </div>
-                        <div class="mmn">
-                            <input type="checkbox">
-                            <label for="">Outro</label>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset id="pkm">
-                    <legend>Sexo</legend>
-                    <div class="mmn">
-                        <input type="checkbox" >
-                        <label for="">Masculino</label>
-                    </div>
-                    <div class="mmn">
-                        <input type="checkbox">
-                        <label for="Feminino">Feminino</label>
-                    </div>
-                </fieldset>
-            </div><br>
-            <label for="">Pai</label>
-            <input type="text">
-            <label for="">Mãe</label>
-            <input type="text">
-            <br>
-            <fieldset>
-                <legend>Queixa Principal</legend>
-                <input id="otk" type="text">
-            </fieldset>
-            <div class="butoes">
-                <button id="pmbs" onclick="morte()">Gravar</button>
-                <button id="pmbs">Cancelar</button>
-                <button id="pmbs">Limpar</button>
-            </div>
-        </form>
-    </fieldset>
-    </body>
+          </fieldset>
+        </div>
+        <br />
+        <label for="">Pai</label>
+        <input type="text" />
+        <label for="">Mãe</label>
+        <input type="text" />
+        <br />
+        <fieldset>
+          <legend>Queixa Principal</legend>
+          <textarea name="" id="" cols="100" rows="10"></textarea>
+        </fieldset>
+        <div class="butoes">
+          <button type="submit" id="pmbs">Gravar</button>
+          <button type="reset" id="pmbs">Limpar</button>
+        </div>
+      </fieldset>
+    </form>
+    <div class="contatos">
+      <h2>Contatos do Web Developer:</h2>
+      <div class="contaticon">
+        <a target="_blank" href="https://wa.me/5571992066970"><i class="fa-brands fa-whatsapp"></i></a>
+        <a target="_blank" href="https://github.com/LucasDaviFernandes"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/lucas-davi-b35434355/"><i class="fa-brands fa-linkedin"></i></a>
+        <a target="_blank" href="mailto:lucasdavi27062022@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
